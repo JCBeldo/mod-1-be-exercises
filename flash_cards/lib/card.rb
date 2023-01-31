@@ -1,18 +1,30 @@
 class Card 
+  # attr_reader :question,
+  #             :answer,
+  #             :category
+              
   def initialize(question, answer, category)
     @question = question
     @answer = answer
     @category = :Geography
   end
   def question
-    p @question
+    @question
+  end
+  def answer
+    @answer
+  end
+  def category
+    @category
   end
 end
 
-p Card.new("What is the capital of Alaska?", "Juneau", :Geography)
+card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 
-Card.question
+p card
 
-# p card.answer
+p card.question
 
-# p card.category
+p card.answer
+
+p card.category
