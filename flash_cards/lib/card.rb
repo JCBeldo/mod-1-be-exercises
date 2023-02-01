@@ -6,7 +6,7 @@ class Card
   def initialize(question, answer, category)
     @question = question
     @answer = answer
-    @category = :Geography
+    @category = category
   end
   def question
     @question
@@ -19,12 +19,12 @@ class Card
   end
 end
 
-card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
+# card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 
-p card
+# p card
 
-p card.question
+# p card.question
 
-p card.answer
+# p card.answer
 
-p card.category
+# p card.category
