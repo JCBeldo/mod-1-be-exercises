@@ -1,13 +1,26 @@
+require './lib/card'
 require 'rspec'
 require './lib/turn'
-require './lib/card'
 
 RSpec.describe Turn do
+  describe '#initialize' do
+  
   it 'exists' do
-    turn = Turn.new("Juneau", card)
+    card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 
-    expect(turn).to be_instance_of(Turn)
+    expect(card).to be_instance_of(Card)
   end
+
+  it 'exists' do
+    turn = Turn.new("Juneau", Card)
+
+    expect(turn).to be_a(Turn)
+  end
+  
+  # describe 'has attributes' do
+    
+  # it ''
+end
 end
 # pry(main)> card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 # #=> #<Card:0x00007f800e29f0c8 @question=""What is the capital of Alaska?", @answer="Juneau", @category=:Geography>

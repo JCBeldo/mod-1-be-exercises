@@ -1,3 +1,5 @@
+require './lib/card'
+
 class Turn
   def initialize(guess, card)
     @guess = guess
@@ -24,3 +26,5 @@ class Turn
   end
 end
 
+# turn = Turn.new("Mercury", card)
+# card = Card.new("Which planet is closest to the sun?", "Mercury", :STEM)
