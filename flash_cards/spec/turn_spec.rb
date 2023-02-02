@@ -17,10 +17,33 @@ RSpec.describe Turn do
     expect(turn).to be_a(Turn)
   end
   
-  # describe 'has attributes' do
+  describe 'has attributes' do
     
-  # it ''
+  it 'turns a card' do
+    turn = Turn.new("Juneau", Card)
+
+    expect(turn.card).to eq(Card)
+  end
+
+  it 'turns a card' do
+    turn = Turn.new("Juneau", Card)
+
+    expect(turn.correct?).to eq(true)
+  end
+
+  it 'turns a card' do
+    turn = Turn.new("Juneau", Card)
+
+    expect(turn.guess).to eq("Juneau")
+  end
+
+  it 'turns a card' do
+    turn = Turn.new("Juneau", Card)
+
+    expect(turn.feedback).to eq("Correct!")
+  end
 end
+  end
 end
 # pry(main)> card = Card.new("What is the capital of Alaska?", "Juneau", :Geography)
 # #=> #<Card:0x00007f800e29f0c8 @question=""What is the capital of Alaska?", @answer="Juneau", @category=:Geography>

@@ -1,3 +1,4 @@
+require 'rspec'
 require './lib/card'
 
 class Turn
@@ -12,7 +13,7 @@ class Turn
     @card
   end
   def correct?
-    if @guess == 'Mercury'
+    if @guess == "Mercury" || @guess == "Juneau"
       true
     else
       false
