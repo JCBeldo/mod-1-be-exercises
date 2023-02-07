@@ -49,7 +49,7 @@ def normalize_zip_codes
 
     # Your code goes here
     numbers.map do |num|
-        num %5d00
+        "%05d" % [num]
     end
     # expected return value is ["00234", "00010", "09119", "38881"]
 end
