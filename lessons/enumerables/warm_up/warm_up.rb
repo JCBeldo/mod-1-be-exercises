@@ -4,7 +4,11 @@
 kardashians = ["kris", "kim", "kourtney", "khloe", "rob"]
 
 def upcase_names(names)
- # your code here
+  @names = names
+  names.each do |name|
+    name.upcase
+  end
+  names
 end 
 
 p upcase_names(kardashians)
