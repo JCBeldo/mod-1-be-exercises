@@ -1,3 +1,4 @@
-require './lib/artist_spec'
-require './lib/curator_spec'
-require './lib/photograph_spec'
+require 'pry'
+require './lib/artist'
+require './lib/curator'
+require './lib/photograph'
