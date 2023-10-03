@@ -37,3 +37,4 @@ In order to practice for the Final Independent Challenge in week 6, students wil
 Students can find examples of Independent Challenges in the [Practice Independent Challenges](./practice_independent_challenges) directory.
 # Flash-cards
 # Flash-cards
+# Flash-cards
